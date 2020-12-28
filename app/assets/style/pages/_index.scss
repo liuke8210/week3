@@ -1,0 +1,164 @@
+.banner{
+    background: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week3/banner.png)no-repeat center center;
+    background-size: cover;
+    height: 840px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    .content{
+        text-align: right;
+    }
+    @include mb{
+        background: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week3/banner-sm.png)no-repeat center center;
+        background-size: cover;
+        height: 394px;
+        .content {
+            padding-top: 164px;
+        }
+    }
+}
+
+
+.service__content{
+        padding: 64px 0 40px 0;
+    .card{
+        &__title{
+            margin-bottom: 4px;
+        }
+        &__item{
+            padding: 0px 30px;
+        }
+    }
+    img{
+        width: 100px;
+        height: 100px;
+        margin: 0 auto 40px 0;
+    }
+    @include pad{
+        img{
+            width: 80px;
+            height: 80px;
+            margin-bottom: $margin*2;
+        }
+        .card__item{
+            padding: 0px 40px;
+        }
+        .pad-mb-1{
+            margin-bottom: $margin;
+        }
+    }
+    @include mb{
+        padding: 32px 0 12px 0;
+    }
+}
+.classic__list{
+    margin-bottom: $margin*10;
+    .classic__pic{
+        width: 60%;
+        height: auto;
+        object-fit: cover;
+    }
+    .classic__link{
+        &:hover{
+            transform: scale(0.9);
+        }
+    }
+    @include pad{
+    margin-bottom: $margin*5;
+        .classic__pic{
+            max-width: 390px;
+        }
+        .classic__diamond{
+            width: 32px;
+            height: auto;
+        }
+        .classic__sun{
+            width: 32px;
+            height: auto;   
+        }
+        .classic__thunder{
+            width: 23px;
+            height: auto;
+        }
+        .flex-row{ 
+            flex-direction: row;
+        }
+    }
+    @include mb{
+        .list__item{
+            position: relative;
+        }
+        .classic__pic{
+            max-width: 345px;
+            width: 100%;
+            margin: 0;
+        }
+        .classic__title{
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+        }
+    }
+}
+.design{
+    padding: 64px 0 80px;
+    background: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week3/bg.png") no-repeat center;
+    background-size: cover;
+    .design__pic{
+        width: 50%;
+        height: auto;
+        position: relative;
+    }
+    .bg{
+        width: 100%;
+        height: 100%;
+        background: rgba(255, 255, 255 ,0.4);
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    @include pad{
+        padding: 40px 0px;
+    }
+    @include mb{
+        height: auto;
+        padding: 32px 0 16px;
+        .design__pic{
+            width: 100%;
+            margin: 0px 0px 16px 0px;
+        }
+    }
+
+}
+.recommend__pic{
+    width: 256px;
+    height: 256px;
+    @include pad{
+        width: 100%;
+    }
+}
+.bd-solid{
+    border: 1px solid #DEE2E6;
+}
+.contact{
+    padding: 64px 0 80px 0;
+    &__title{
+        color: #000;
+    }
+    &__text{
+        margin-bottom: $margin*1.25;
+    }
+    @include pad{
+        padding: 40px 0px;
+    }
+    @include mb{
+        padding: 32px 0px;
+        &__text{
+            margin-bottom: $margin;
+        }
+    }
+}

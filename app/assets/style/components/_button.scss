@@ -1,0 +1,18 @@
+.btn{
+    width: 350px;
+    text-align: center;
+    padding: 16px 0;
+    display: block;
+    border: 0px;
+    cursor: pointer;
+    &:hover{
+        background: $secondary;
+    }
+    @include pad{
+        width: 210px;
+        padding: 8px 0px;
+    }
+    @include mb{
+        width: 165px;
+    }
+}

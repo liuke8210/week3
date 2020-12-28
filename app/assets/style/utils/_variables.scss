@@ -1,0 +1,216 @@
+$primary: #AA0601;
+$secondary: #650300;
+$third: #FBF2F2;
+$fourth: #111619;
+$text-light: #fff;
+$text-dark:#212529;
+$text-pale: #707070;
+
+// $line-height-base: 1rem;
+$font-size-base: 16px;
+
+
+
+.content{
+    max-width: 1110px;
+    width: 100%;
+    margin: 0 auto;
+    @include pad{
+        max-width: 690px;
+    }
+    @include mb{
+        max-width: 345px;
+    }
+}
+
+h2{
+    font-size: $font-size-base*4;
+    line-height: 90px;
+    color: $secondary;
+    font-weight: bold;
+}
+h3{
+    font-size: $font-size-base*3;
+    line-height: 67px;
+    color: $secondary;
+    font-weight: bold;
+    margin-bottom: 60px;
+}
+h4{
+    font-size: $font-size-base*1.5;
+    line-height: 33px;
+    color: $secondary;
+    font-weight: bold;
+}
+
+.bg-primary{
+    background-color: $primary;
+}
+.bg-third{
+    background-color: $third;
+}
+.btn-primary{
+    background: $primary;
+    color: #fff;
+}
+.text-primary{
+    color: $primary;
+}
+.text-light{
+    color: $text-light;
+}
+.text-dark{
+    color: $text-dark;
+}
+.text-pale{
+    color: $text-pale;
+}
+
+.text-bold{
+    font-weight: bold;
+}
+
+.text-xs{
+    font-size: $font-size-base*0.875;
+    line-height: 20px;
+}
+.text-ss{
+    font-size: $font-size-base;
+    line-height: 22px;
+}
+.text-s{
+    font-size: $font-size-base*1.25;
+    line-height: 28px;
+}
+.text-ms{
+    font-size: $font-size-base*2;
+    line-height: 45px;
+}
+.text-m{
+    font-size: $font-size-base*2.25;
+    line-height: 48px;
+}
+.text-l{
+    font-size: $font-size-base*3;
+    line-height: 63px;
+}
+.text-xl{
+    font-size: $font-size-base*4.5;
+    line-height: 95px;
+}
+
+.font-weight-bold{
+    font-weight: bold;
+}
+
+.d-flex{
+    display: flex;
+}
+.justify-content-between{
+    justify-content: space-between;
+}
+.justify-content-around{
+    justify-content: space-around;
+}
+.flex-row-reverse{
+    flex-direction: row-reverse;
+}
+.align-items-center{
+    align-items: center;
+}
+.text-align-center{
+    text-align: center;
+}
+.align-items-end{
+    align-items: flex-end;
+}
+.d-none{
+    display: none;
+}
+
+@include pad{
+    h2{
+        font-size: $font-size-base*3;
+        line-height: 67px;
+    }
+    h3{
+        font-size: $font-size-base*2;
+        line-height: 45px;
+    }
+    .pad-text-xs{
+        font-size: $font-size-base*0.875;
+        line-height: 20px;
+    }
+    .pad-text-ss{
+        font-size: $font-size-base;
+        line-height: 24px;
+    }
+    .pad-text-s{
+        font-size: $font-size-base*1.25;
+        line-height: 26px;
+    }
+    .pad-text-l{
+        font-size: $font-size-base*1.75;
+        line-height: 37px;
+    }
+    .pad-text-xl{
+        font-size: $font-size-base*2;
+        line-height: 43px;
+    }
+    .justify-content-between{
+        justify-content: space-between;
+    }
+    .d-none{
+        display: none;
+    }
+
+}
+
+@include mb{
+    h2{
+        font-size: $font-size-base*2;
+        line-height: 45px;
+    }
+    h3{
+        font-size: $font-size-base*1.5;
+        line-height: 33px;
+    }
+    h4{
+        font-size: $font-size-base*1.5;
+        line-height: 28px;
+    }
+    .mb-d-none{
+        display: none;
+    }
+    .mb-d-block{
+        display: block;
+    }
+    .mb-text-xs{
+        font-size: $font-size-base*0.875;
+        line-height: 19px;
+    }
+    .mb-text-ss{
+        font-size: $font-size-base*0.875;
+        line-height: 21px;
+    }
+    .mb-text-s{
+        font-size: $font-size-base;
+        line-height: 22px;
+    }
+    .mb-text-m{
+        font-size: $font-size-base*1.25;
+        line-height: 28px;
+    }
+    .mb-f-column{
+        flex-direction: column;
+    }
+    .f-wrap{
+        flex-wrap: wrap;
+    }
+    .mb-text-light{
+        color: $text-light;
+    }
+
+
+}
+

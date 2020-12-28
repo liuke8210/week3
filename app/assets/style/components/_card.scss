@@ -1,0 +1,25 @@
+.card{
+    display: flex;
+    width: 100%;
+}
+.card__item{
+    width: 25%;
+}
+@include pad{
+    .card{
+        flex-wrap: wrap;
+    }
+    .card__item{
+        width: 47%;
+        &:nth-child(2){
+            margin-right: 0;
+        } 
+    }
+    @include mb{
+        .card__item{
+            width: 100%;
+            margin-right: 0px;
+        }
+        
+    }
+}

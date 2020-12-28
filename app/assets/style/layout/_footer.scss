@@ -1,0 +1,85 @@
+.footer__content{
+    padding: 36px 0 29px;
+    .footer__contact{
+        padding-bottom: 20px;
+        border-bottom: 1px solid #FFFFFF;
+    }
+    .navbar__item{
+        &__phoneIcon{
+            width: 44px;
+            margin-right: 17px;
+        }
+        &__mailIcon{
+            margin-right: 12px;
+        }
+        &__link:hover{
+            transform: scale(0.9);
+        }
+    }
+    .footer__logo{
+        display: none;
+    }
+    @include pad{
+        a{
+            display: block;
+        }
+
+        .icon{
+            width: 24px;
+        }
+
+        .navbar__item__phoneIcon{
+            width: 24px;
+            height: 24px;
+            margin-right: 12px;
+            margin-left: 4px;
+        }
+        .navbar__item__mailIcon{
+            width: 32px;
+            height: 32px;
+            margin-right: 8px;
+        }
+        .footer__logo{
+            display: none;
+        }
+    }
+    @include mb{
+        padding: 23px 16px;
+        .float-r{
+            float: right;
+        }
+        .footer__contact{
+            width: 100%;
+            margin-bottom: 18px;
+        }
+        .navbar__item__phoneIcon{
+            width: 20px;
+            height: 20px;
+            margin-right: 4px;
+            margin-left: 0;
+        }
+        .navbar__item__mailIcon{
+            width: 20px;
+            height: 20px;
+            margin-right: 5px;
+        }
+        .footer__copyight{
+            width: 100%;
+        }
+        .footer__privacy{
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+            li{
+                width: 90%;
+                margin-left: 0px;
+            }
+        }
+        .footer__logo{
+            display: block;
+            width: 46px;
+            height: 28px;
+        }
+    }
+}

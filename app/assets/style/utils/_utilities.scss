@@ -1,0 +1,120 @@
+$padding: 8px;
+$margin: 8px;
+
+.m-auto{
+    margin: 0 auto;
+}
+
+.p-2{
+    padding: $padding*2;
+}
+.pt-1{
+    padding-top: $padding;
+}
+.pb-1{
+    padding-bottom: $padding;
+}
+
+.mb-1{
+    margin-bottom: $margin*0.875;
+}
+.mb-2{
+    margin-bottom: $margin*1.75;
+}
+.mb-3{
+    margin-bottom: $margin*3;
+}
+.mb-4{
+    margin-bottom: $margin*4;
+}
+.mb-5{
+    margin-bottom: $margin*5;
+}
+.mb-7{
+    $margin-bottom: $margin*7.5;
+}
+.mb-8{
+    margin-bottom: $margin*8;
+}
+.ml-4{
+    margin-left: $margin*4;
+}
+.ml-5{
+    margin-left: $margin*5;
+}
+.ml-6{
+    margin-left: $margin*6;
+}
+.ml-8{
+    margin-left: $margin*8;
+}
+.mr-1{
+    margin-right: $margin;
+}
+.mr-2{
+    margin-right: $margin*2;
+}
+.mr-3{
+    margin-right: $margin*3;
+}
+.mr-4{
+    margin-right: $margin*3.75;
+}
+.mr-5{
+    margin-right: $margin*5;
+}
+.mr-6{
+    margin-right: $margin*6;
+}
+
+@include pad{
+    .pad-mb-1{
+        margin-bottom: $margin;
+    }
+    .pad-mb-2{
+        margin-bottom: $margin*2;
+    }
+    .pad-mb-3{
+        margin-bottom: $margin*3;
+    }
+    .pad-mb-4{
+        margin-bottom: $margin*4;
+    }
+    .pad-mb-5{
+        margin-bottom: $margin*5;
+    }
+    .pad-mr-2{
+        margin-right: $margin*2;
+    }
+    .pad-mr-5{
+        margin-right: $margin*5;
+    }
+    .pad-ml-3{
+        margin-left: $margin*3;
+    }
+    .pad-mb-1{
+        margin-bottom: $margin;
+    }
+    .pad-pb-3{
+        padding-bottom: $padding*3;
+    }
+
+}
+
+@include mb{
+    .mb-mr-1{
+        margin-right: $margin;
+    }
+    .mb-mb-1{
+        margin-bottom: $margin;
+    }
+    .mb-mb-2{
+        margin-bottom: $margin*1.5;
+    }
+    .mb-mb-3{
+        margin-bottom: $margin*2.5;
+    }
+    .mb-mb-4{
+        margin-bottom: $margin*4;
+    }
+}
